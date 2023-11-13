@@ -4,7 +4,7 @@ const numeros = [1, 2, 3, 4, 5, 6];
 
 var maior = 0;
 
-numeros.reduce(function(anterior, atual, index, array){
+numeros.reduce(function(anterior, atual){
     maior = anterior > atual ? anterior : atual;
 });
 
