@@ -1,11 +1,9 @@
 
 
-const numeros = [1, 2, 3, 4, 5, 6];
+const numeros = [1, 21, 3, 4, 5, 6];
 
-var maior = 0;
+maior = 0;
 
-numeros.reduce(function(anterior, atual){
-    maior = anterior > atual ? anterior : atual;
-});
+maior = numeros.reduce(function(anterior, atual){ return anterior > atual ? anterior : atual;});
 
 console.log("O maior número é " + maior)
